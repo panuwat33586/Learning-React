@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import {choice,remove} from './helper'
-import foods from './foods'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {choice,remove} from './helper';
+import foods from './foods';
 
 let fruit =choice(foods)
 
