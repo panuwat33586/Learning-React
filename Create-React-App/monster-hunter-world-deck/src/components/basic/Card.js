@@ -11,11 +11,11 @@ margin:10px;
 `;
 const CardTitle=styled.div`
   font-family:'Kanit', sans-serif;
+  font-size:20px;
   margin:5px;
   text-align:center;
 `;
 const CardBody = styled.div`
-display:flex;
 padding: 2px 16px;
 `;
 const ImageContainer = styled.div`
