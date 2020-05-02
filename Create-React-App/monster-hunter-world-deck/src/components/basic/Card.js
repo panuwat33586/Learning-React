@@ -9,11 +9,15 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 border-radius: 5px;
 margin:10px;
 `;
+const CardTitle=styled.div`
+  font-family:'Kanit', sans-serif;
+  margin:5px;
+  text-align:center;
+`;
 const CardBody = styled.div`
 display:flex;
 padding: 2px 16px;
 `;
-
 const ImageContainer = styled.div`
   width:100%;
   height: 100%;
@@ -25,8 +29,11 @@ const Image = styled.img`
 `
 
 
-export const Card = ({ Img, children }) => (
+export const Card = ({ Img,title, children }) => (
     <CardContainer>
+        <CardTitle>
+           {title}
+        </CardTitle>
         <ImageContainer>
             <Image src={Img}  />
         </ImageContainer>
