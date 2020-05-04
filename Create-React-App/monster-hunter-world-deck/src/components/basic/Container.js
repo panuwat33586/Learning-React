@@ -24,3 +24,14 @@ export const Col =({span,children})=>(
      {children}
      </Column>
 )
+
+const LogoContainer=styled.div`
+     display:flex;
+     justify-content:center;
+`
+
+export const Logo=({children})=>(
+   <LogoContainer>
+            {children}
+   </LogoContainer>
+)
