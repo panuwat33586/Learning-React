@@ -11,8 +11,10 @@ function columnCal(span){
     return `0 1 calc(${(span/24)*100}% - 1em)`
 }
 const Column=styled.div`
+   margin:5px;
    display:flex;
-   flex:${({span})=>columnCal(span) }
+   flex-direction:column;
+   flex:${({span})=>columnCal(span) };
 `;
 
 export const Col =({span,children})=>(
