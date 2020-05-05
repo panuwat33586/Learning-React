@@ -8,6 +8,9 @@ flex-direction:column;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 border-radius: 5px;
 margin:10px;
+background-image:${({backgroundImg})=>`url(${backgroundImg})`};
+background-size:cover;
+background-color:${({backgroundColor})=>backgroundColor}
 `;
 const CardTitle=styled.div`
   font-family:'Kanit', sans-serif;
@@ -29,8 +32,8 @@ const Image = styled.img`
 `
 
 
-export const Card = ({ Img,title, children }) => (
-    <CardContainer>
+export const Card = ({ Img,title,backgroundImg,backgroundColor, children }) => (
+    <CardContainer backgroundImg={backgroundImg} backgroundColor={backgroundColor}>
         <CardTitle>
            {title}
         </CardTitle>

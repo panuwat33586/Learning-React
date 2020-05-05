@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
       <Logo>
-        <img src={process.env.PUBLIC_URL + '/images/Logo.png'} />
+        <img style={{width:'400px',height:'200px'}} src={process.env.PUBLIC_URL + '/images/Logo.png'} alt='monster-hunter-world-logo'/>
       </Logo>
       <h2>Large Monster</h2>
       <CategorySection
